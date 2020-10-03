@@ -1,0 +1,9 @@
+schema: schema.json
+documents:
+  - 'listBlogs.graphql'
+generates:
+  ./out.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo

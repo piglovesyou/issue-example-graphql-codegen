@@ -1,0 +1,15 @@
+query (
+  $filter: ModelBlogFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listBlogs(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+    }
+  }
+}
