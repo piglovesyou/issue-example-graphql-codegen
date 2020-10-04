@@ -1,4 +1,4 @@
-query (
+query ListBlogs (
   $filter: ModelBlogFilterInput
   $limit: Int
   $nextToken: String
